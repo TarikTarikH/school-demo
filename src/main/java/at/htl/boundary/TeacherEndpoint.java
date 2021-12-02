@@ -29,4 +29,12 @@ public class TeacherEndpoint {
 
         return Response.status(201).build();
     }
+
+    @POST
+    @Path("init-teachers")
+    public Response readTeachersFromCsv(){
+        this.teacherRepository.readTeachersFromFile();
+
+        return Response.ok().build();
+    }
 }
