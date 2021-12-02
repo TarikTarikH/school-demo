@@ -1,5 +1,6 @@
 package at.htl.entity;
 
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class Teacher {
     private String lastName;
 
     @OneToMany(mappedBy = "teacher")
+    @JsonbTransient
     private List<Student> students;
 
     public Teacher() {
@@ -31,8 +33,20 @@ public class Teacher {
         this.lastName = lastName;
     }
 
+    public Teacher(long id, String firstName, String lastName, List<Student> students) {
+        this();
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.students = students;
+    }
+
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getFirstName() {

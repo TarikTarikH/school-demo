@@ -25,3 +25,27 @@ Content-Type: application/json
 }
 
 ###
+
+#New student with teacher and classRoom
+POST http://localhost:8080/api/student
+Content-Type: application/json
+
+{
+  "firstName": "Jan",
+  "lastName": "Kaufmann",
+  "age": 19,
+  "teacher": {"id":  1},
+  "classRoom": {"className":  "5AHIF"}
+}
+
+###
+# Admin
+POST http://localhost:8080/api/student/clear
+Authorization: Basic scott jb0ss
+
+###
+
+###
+
+GET http://localhost:8080/api/student/info
+Authorization: Basic noadmin n0Adm1n
