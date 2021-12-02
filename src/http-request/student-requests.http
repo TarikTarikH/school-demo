@@ -1,0 +1,27 @@
+GET http://localhost:8080/api/student
+
+###
+
+POST http://localhost:8080/api/student
+Content-Type: application/json
+
+{
+"firstName": "Tarik",
+"lastName": "Hosic",
+"age": 19
+}
+
+###
+
+#New student with teacher
+POST http://localhost:8080/api/student
+Content-Type: application/json
+
+{
+  "firstName": "Moritz",
+  "lastName": "Eichhorn",
+  "age": 19,
+  "teacher": {"id":  1}
+}
+
+###

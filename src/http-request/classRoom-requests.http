@@ -1,0 +1,11 @@
+POST http://localhost:8080/api/class-room
+Content-Type: application/json
+
+{
+  "classNumber": "K04",
+  "className": "5AHIF"
+}
+
+###
+
+GET http://localhost:8080/api/class-room

@@ -1,0 +1,11 @@
+POST http://localhost:8080/api/teacher
+Content-Type: application/json
+
+{
+  "firstName": "Riccarda",
+  "lastName": "Reiter"
+}
+
+###
+
+GET http://localhost:8080/api/teacher
