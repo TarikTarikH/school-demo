@@ -21,6 +21,7 @@ public class StudentEndpoint {
     @Inject
     StudentRepository studentRepository;
 
+    //Add extension: quarkus-elytron-security-properties-file
     @Inject
     SecurityIdentity securityIdentity;
 
