@@ -51,4 +51,11 @@ public class StudentEndpoint {
     public SecurityIdentity getInfo(){
         return securityIdentity;
     }
+
+    @GET
+    @RolesAllowed({"admin", "simp"})
+    @Path("basket")
+    public String getBasket(){
+        return "\uD83D\uDC94 L \uD83D\uDC94";
+    }
 }

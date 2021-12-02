@@ -49,3 +49,8 @@ Authorization: Basic scott jb0ss
 
 GET http://localhost:8080/api/student/info
 Authorization: Basic noadmin n0Adm1n
+
+###
+
+GET http://localhost:8080/api/student/basket
+Authorization: Basic nico emina187
