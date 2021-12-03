@@ -52,6 +52,7 @@ public class StudentEndpoint {
     @Path("info")
     @RolesAllowed({"**"})
     public SecurityIdentity getInfo(){
+        return securityIdentity;
     }
 
     @GET
