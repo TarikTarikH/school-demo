@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "CLASS_ROOM")
-public class ClassRoom  extends PanacheEntityBase {
+public class ClassRoom extends PanacheEntityBase {
 
     @Column(name = "CLASS_NUMBER")
     private String classNumber;

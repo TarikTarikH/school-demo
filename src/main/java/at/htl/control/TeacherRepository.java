@@ -1,20 +1,14 @@
 package at.htl.control;
 
-import at.htl.entity.ClassRoom;
 import at.htl.entity.Teacher;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
 import javax.transaction.Transactional;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.StringReader;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 

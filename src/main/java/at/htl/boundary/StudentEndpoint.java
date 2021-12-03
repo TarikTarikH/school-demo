@@ -6,6 +6,7 @@ import at.htl.entity.Student;
 import at.htl.entity.Teacher;
 import io.quarkus.security.identity.SecurityIdentity;
 
+import javax.annotation.security.PermitAll;
 import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -49,8 +50,8 @@ public class StudentEndpoint {
 
     @GET
     @Path("info")
+    @RolesAllowed({"**"})
     public SecurityIdentity getInfo(){
-        return securityIdentity;
     }
 
     @GET
